@@ -1,7 +1,8 @@
 # GNMI/GNOI development container including
 # - golang
+# - git
 # - github.com/google/gnxi
-# - emacs (it's all you need)
+# - vim
 #
 # Build with
 # docker build -t deb:gnmi .
@@ -16,7 +17,7 @@
 #
 FROM debian:buster
 RUN apt update && apt upgrade -y
-RUN apt install -y emacs
+RUN apt install -y vim
 RUN apt install -y git
 # optionally copy from local machine
 # COPY ./data/go/go* /tmp
